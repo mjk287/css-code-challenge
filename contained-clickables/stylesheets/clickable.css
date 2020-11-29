@@ -1,35 +1,4 @@
-/* .clickable-button {
-    display: table-cell;
-    border: 2px solid rgba(0, 0, 0, 1);
-    height: 50px;
-    border-radius: 25px;
-    margin: 0 5px;
-}
-
-#button-container{
-    display: table;
-    padding: 50vh 50vw;
-    text-align: center;
-    margin: auto;
-    width: 40%;
-    border-spacing: 30px;
-} */
-
 /* reset default html styling for buttons*/
-/* button {
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-  }
-  
-  button:hover {
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-  } */
-  
   button:active {
     outline: none;
     border: none;
@@ -39,6 +8,8 @@
     outline: 0;
   }
 
+  /* ---------------------------------- */
+
 body {
     position: absolute;
     display: table;
@@ -46,7 +17,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-    background-color: rgb(101, 113, 181);
+    background: rgb(101, 113, 181);
     text-align: center;
     margin: auto;
     width: 40%;
@@ -57,37 +28,39 @@ body {
 .clickables {
     display: table-cell;
     position: relative;
-    border: 3px solid #41486D;
-    border-style: groove;
     height: 66px;
-    border-radius: 33px;
-    margin: 0 10px;
     width: 25%;
+    margin: 0 10px;
+    border: 3px solid #41486D;
+    border-radius: 33px;
     font-family: 'Barlow';
     font-weight: 900;
     font-size: 15px;
-    color: #E6E7F2;
     text-transform: uppercase;
     text-shadow: 4px 0px 5px #272e50;
-    background: linear-gradient(#7480C2,#616BA2);
+    color: #E6E7F2;
     letter-spacing: 0.1em;
+    background: linear-gradient(#7480C2,#616BA2);
     /* box-shadow: 10px 10px 10px#616BA2; */
-    box-shadow: inset 0px 0px 0px 2px #E6E7F217;
+    box-shadow: inset 0px 0px 0px 3px #616BA2;
     transition: .4s;
 }
+
+/* ------------- hover ---------------- */
 
 .clickables:hover {
     border: 3px solid #5a6497;
     background: linear-gradient(#616BA2, #7480C2);
-    
+    box-shadow: inset 0px 0px 0px 3px #E6E7F217;
 }
+/* ------------- focus ---------------- */
 
 .clickables:focus {
     border: 3px solid #6849E3;
     color: #6849E3;
     background: #383E5E;
-    /* background: none; */
 }
+
 
 .clickables:focus:after {
     content: "ed!";

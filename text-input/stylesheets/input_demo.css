@@ -1,11 +1,7 @@
 /* remove default css */
 input {
-    /* border: none;
-    background: none;
-    background-color: transparent; */
     outline: none;
 }
-
 
 body {
     position: absolute;
@@ -25,64 +21,53 @@ div {
 
 input {
     position: absolute;
-    font-size: 16px;
     height: 20px;
     width: 100%;
-    padding: 15px 8px;
+    padding: 15px 10px;
     background: #49517B;
     border: 2px solid #24283D;
     border-radius: 5px;
-    color: #E6E7F2;
+    font-size: 16px;
 }
 
 
 label {
     position: absolute;
-    color: #E6E7F2;
     font-family: 'Barlow', sans-serif;
     top: 15px;
-    left: 8px;
+    left: 10px;
 }
 
 label, input {
     transition: .4s;
+    color: #E6E7F2;
   }
 
-/* ------------- focus -------------------------*/
 input:focus {
     background: transparent;
-    border: 2px solid #0027FF;
+    border-color: #0027FF;
     color: #383E5E;
+}
+
+input:focus + label, input:valid + label {
+    top: -10px;
+    padding: 0 5px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 input:focus + label {
-    top: -10px;
-    padding: 0 5px;
-    margin: 0;
     color: #0027FF;
     background: #7a86cb;
-    font-weight: bold;
-    font-size: 14px;
 }
 
-/* ---------- typing ------------------------*/
 input:valid + label {
-    top: -10px;
     background: #7a86cb;
     color: #383E5E;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 0 5px;
-    margin: 0;
   }
   
   input:valid {
     background: transparent;
     border-color: #383E5E;
-    /* border: 1px solid #383E5E; */
   }
-
-  /* div > input:valid {
-    background-color: transparent;
-    border: 2px solid #0027FF;
-} */
