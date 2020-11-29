@@ -52,6 +52,7 @@ body {
     border: 3px solid #5a6497;
     background: linear-gradient(#616BA2, #7480C2);
     box-shadow: inset 0px 0px 0px 3px #E6E7F217;
+    cursor: pointer;
 }
 /* ------------- focus ---------------- */
 
@@ -59,6 +60,7 @@ body {
     border: 3px solid #6849E3;
     color: #6849E3;
     background: #383E5E;
+    cursor: default;
 }
 
 

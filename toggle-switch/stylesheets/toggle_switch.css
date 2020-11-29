@@ -41,6 +41,10 @@ label {
     border-radius: 50px;
 }
 
+input, label {
+    cursor: pointer;
+}
+
 /* ---------------- checked ---------------------- */
 
 input:checked + label {
